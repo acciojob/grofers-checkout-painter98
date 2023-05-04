@@ -12,7 +12,9 @@ const getSum = () => {
 
 	let tr = document.createElement('tr');
 	let td = document.createElement('td');
+	
 	td.innerHTML = `${sum}`;
+	tr.setAttribute('id','ans');
 	tr.appendChild(td);
 	
 	document.querySelector('.tabled').appendChild(tr);
